@@ -32,6 +32,8 @@ section .bar{
     height: calc(100% - 120px);
     border: 1px solid silver;
     display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(30px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(30px,1fr));
 }
 .block{
     width: 30px;
