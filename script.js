@@ -1,12 +1,8 @@
-const board = document.querySelector('.board');
+let block = document.getElementById(".bord");
 
-const blockSize = 30;
-
-const columns = Math.floor(board.clientWidth / blockSize);
-const rows = Math.floor(board.clientHeight / blockSize);
-
-for (let i = 0; i < rows * columns; i++) {
-    const block = document.createElement('div');
-    block.classList.add('block');
-    board.appendChild(block);
+for (let i = 0; i < 10; i++){
+      const newBlock = document.createElement("div");
+      newBlock.classList.add("newBlock");
+      newBlock.id = "block"
+      block.appendChild(newBlock);
 }
