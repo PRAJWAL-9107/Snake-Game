@@ -4,19 +4,23 @@ bord.innerHTML = "";
 
 const bordWidth = bord.clientWidth;
 const bordHeight = bord.clientHeight;
-console.dir(bord)
-const blockSize = 54;
 
-const col = Math.floor(bordWidth / blockSize);
-const row = Math.floor(bordHeight / blockSize);
 
-const totalBlocks = col * row;
+const blockSize = 70;
 
-for (let i = 1; i <= totalBlocks; i++) {
-      const block = document.createElement("div");
-      block.className = "food";
-      block.textContent = i;
-      bord.appendChild(block);
+const cols = Math.floor(bordWidth / blockSize);
+const rows = Math.floor(bordHeight / blockSize);
+
+const totalBlocks = cols * rows;
+
+for (let row = 0; row <= rows; row++) {
+      for (let col = 0; col <= cols; col++) {
+            const block = document.createElement("div");
+            block.className = "food";
+            // block.textContent = i;
+            block.innerText = `${row}-${col}`
+            bord.appendChild(block);
+      }
 }
 }
 
