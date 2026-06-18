@@ -18,7 +18,7 @@ for (let row = 0; row <= rows; row++) {
             const block = document.createElement("div");
             block.className = "food";
             // block.textContent = i;
-            block.innerText = `${row}-${col}`
+            block.innerText = `${row}-${col}`;
             bord.appendChild(block);
       }
 }
