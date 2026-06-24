@@ -1,4 +1,5 @@
-html,body{
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@ html,body{
     background-color: rgb(66, 66, 66);
 }
 
-.bar{
+.bar {
     height: 80px;
     width: 100%;
     box-sizing: border-box;
@@ -14,10 +15,11 @@ html,body{
     justify-content: space-around;
     align-items: center;
     border: 5px solid black;
+    border-bottom: none;
     border-radius: 10px;
 }
 
-.bord{
+.bord {
     width: 100%;
     height: calc(100vh - 80px);
     border: 2px solid black;
@@ -26,9 +28,18 @@ html,body{
     grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(70px, 1fr));
     /* overflow: hidden; */
+    position: relative;
 }
 
-.food{
+#snake {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: brown;
+    border: 2px red solid;
+}
+
+.food {
     /* box-sizing: border-box; */
     border: 1px solid black;
 }
