@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake practice</title>
+</head>
+<style>
+    *{
+        background-color: gray;
+    }
+    #snake {
+    width: 30px;
+    height: 30px;
+    background: green;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+</style>
+<body>
+    <div id="snake"></div>
+</body>
+<script>
+    const snake = document.getElementById("snake");
+
+let x = 100;
+let y = 100;
+const step = 50;
+
+document.addEventListener("keydown", (e) => {
+
+    if (e.key === "ArrowLeft") {
+        x -= step;
+    }
+
+    if (e.key === "ArrowRight") {
+        x += step;
+    }
+
+    if (e.key === "ArrowUp") {
+        y -= step;
+    }
+
+    if (e.key === "ArrowDown") {
+        y += step;
+    }
+
+    snake.style.left = x + "px";
+    snake.style.top = y + "px";
+});
+</script>
+</html>

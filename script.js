@@ -5,7 +5,6 @@ bord.innerHTML = "";
 const bordWidth = bord.clientWidth;
 const bordHeight = bord.clientHeight;
 
-
 const blockSize = 70;
 
 const cols = Math.floor(bordWidth / blockSize);
