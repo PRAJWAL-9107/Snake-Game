@@ -1,45 +1,49 @@
-html,
-body {
-    height: 100%;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(66, 66, 66);
 }
 
-.bar {
-    height: 80px;
-    width: 100%;
-    box-sizing: border-box;
+body {
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    border: 5px solid black;
-    border-bottom: none;
-    border-radius: 10px;
+    justify-content: center;
+    background: #222;
+    font-family: Arial, sans-serif;
+    color: white;
 }
 
-.bord {
-    width: 100%;
-    height: calc(100vh - 80px);
-    border: 2px solid black;
-    box-sizing: border-box;
+h1 {
+    margin-bottom: 10px;
+}
+
+#score {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+#board {
+    width: 800px;
+    height: 800px;
+    border: 3px solid white;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(70px, 1fr));
-    /* overflow: hidden; */
-    position: relative;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    background: #111;
 }
 
-#snake {
-    position: absolute;
-    height: 70px;
-    width: 70px;
-    background-color: brown;
-    border: 2px red solid;
+.snake {
+    background: limegreen;
+    border: 1px solid #111;
+}
+
+.head {
+    background: green;
 }
 
 .food {
-    /* box-sizing: border-box; */
-    border: 1px solid black;
+    background: red;
+    border-radius: 50%;
 }
