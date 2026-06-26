@@ -34,4 +34,4 @@ This is a classic Snake Game developed using **HTML, CSS, and JavaScript**. The 
 * `style.css` – Handles the game's design and styling.
 * `script.js` – Implements the game logic, movement, scoring, and collision detection.
 
-* ##[PLAY](https://prajwal-9107.github.io/Snake-Game/)
+## [PLAY](https://prajwal-9107.github.io/Snake-Game/)
